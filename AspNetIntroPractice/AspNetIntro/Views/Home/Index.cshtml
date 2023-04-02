@@ -1,0 +1,64 @@
+﻿
+<h1>Hello P135</h1>
+
+@model data
+
+
+
+<section id="home">
+
+    <div class="navbar">
+
+        <h3 style="background-color:red">Salam p135</h3>
+
+        @{  
+             List<string> names = new List<string> { "Shaiq", "Konul", "Ceyhun" };
+        }
+
+        @foreach (var item in names)
+        {
+            <h1>@item</h1>
+        }
+
+
+
+
+        <ul>
+          @for (var i = 0; i < 5; i++)
+          {
+               <li>@i</li>
+          }
+        </ul>
+
+
+        @{
+            int count = 100;
+
+        }
+
+        @{
+            @for (var i = 0; i < 15; i++)
+            {
+               <li>@count</li>
+               count++;
+            }
+        }
+
+
+        @foreach (var item in Model)
+        {
+            <h1>@item</h1>
+        }
+
+
+
+
+
+      
+    </div>
+
+</section>
+
+
+
+@*<script>console.log("salam")</script>*@
